@@ -1,19 +1,20 @@
 import React from 'react';
 
-function CharacterCard() {
+function CharacterCard({cardDetails}) {
   return (
 
     <div className="sub-card">
     <div className="img">
-     <img src=""></img>
+     <img cla src={cardDetails.image} />
     </div >
      <div className="about">
-       <p className="name-style">Name:pinky</p>
-       <p className="actor-style">Actor:</p>
-       <p className="text">House:</p>
-       <p className="text">DOB:</p>
-       <p className="text">Ancestry:</p>
-       <p className="text">Alive:</p>
+       <p className="name-style">{cardDetails.name}</p>
+       <p className="actor-style">{cardDetails.actor}</p>
+       <p className="text">{cardDetails.house}</p>
+       <p className="text">{ cardDetails.dateOfBirth && "DOB:"+ cardDetails.dateOfBirth}</p>
+       <p className="text">{
+         cardDetails.alive?"Alive":"Dead"
+       }</p>
        </div>
    </div>
   );

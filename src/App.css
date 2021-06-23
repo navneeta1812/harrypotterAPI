@@ -20,33 +20,33 @@ overflow: scroll;
   grid-row-gap: 4rem;
 }
 .sub-card{
-  width: 17rem;
-  height: 22rem;
-  background-color: rgba(0, 0, 0, 0.192);
-  border: 1.5px solid black;
+  width: 22rem;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.575);
+  border: 1.5px solid whitesmoke;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: '#ddd';
  
 }
 
 .sub-card:hover{
-  width: 17rem;
-  height: 22rem;
-  background-color: rgba(0, 0, 0, 0.452);
-  border: 2.5px solid black;
+  width: 22rem;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.753);
+  border: 2px solid white;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 
-.img{ 
+img{ 
  
-  border: 1px solid black;
-  border-radius: 50px;
-  height: 6rem;
-  width: 6rem;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -69,4 +69,15 @@ overflow: scroll;
 
 .text{
   color: antiquewhite;
+}
+@media only screen and (max-width: 360) {
+  .card{
+    content: "";
+    justify-content: space-between;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
 }

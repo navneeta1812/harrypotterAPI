@@ -12,7 +12,7 @@ function App() {
       return response.json()
     })
     .then(data => {
-      console.log(data)
+     setcharacterList(data)
     })
     .catch(err => {
       alert(err)
@@ -22,8 +22,15 @@ function App() {
   return (
     <div className="App">
    <div className="card">
+
+     {
+       characterList.map(item =>(
+        <CharacterCard
+        cardDetails={item} />
+
+       ))
+     }
     
-    <CharacterCard />
 
 
       
