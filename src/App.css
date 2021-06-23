@@ -70,14 +70,15 @@ img{
 .text{
   color: antiquewhite;
 }
-@media only screen and (max-width: 360) {
+@media only screen and (max-width: 460px) {
   .card{
-    content: "";
-    justify-content: space-between;
-    margin: 1rem;
     display: grid;
     grid-template-columns: auto;
-    grid-column-gap: 4rem;
     grid-row-gap: 4rem;
+  }
+
+  .App{
+    padding-left: 0px;
+  padding-right: 0px;
   }
 }
