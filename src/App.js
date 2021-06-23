@@ -1,9 +1,17 @@
+import React from 'react';
 import './App.css';
+import CharacterCard from './Card/CharacterCard';
 
 function App() {
   return (
     <div className="App">
-    <h1 >Harry Potter</h1>
+   <div className="card">
+    
+    <CharacterCard />
+
+
+      
+   </div>
     </div>
   );
   

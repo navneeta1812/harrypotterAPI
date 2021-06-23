@@ -1,4 +1,72 @@
 .App {
   text-align: center;
+  background-image: url('./assets/hpbg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  padding-left: 5vw;
+  padding-right: 5vw;
+overflow: scroll;
+}
+.card{
+  content: "";
+  justify-content: space-between;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+}
+.sub-card{
+  width: 17rem;
+  height: 22rem;
+  background-color: rgba(0, 0, 0, 0.192);
+  border: 1.5px solid black;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: '#ddd';
+ 
 }
 
+.sub-card:hover{
+  width: 17rem;
+  height: 22rem;
+  background-color: rgba(0, 0, 0, 0.452);
+  border: 2.5px solid black;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.img{ 
+ 
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 6rem;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+ 
+}
+.about{
+  line-height: .5rem;
+}
+.name-style{
+  font-weight: bolder;
+  font-size: large;
+  font-family: cursive;
+  color: aliceblue;
+}
+.actor-style{
+  font-size: medium;
+  color: aliceblue;
+}
+
+.text{
+  color: antiquewhite;
+}
